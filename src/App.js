@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React, { useState } from 'react';
+import './App.css';
+import AddTask from './components/addNote/AddNote'; // Corrected the component name
+import TaskList from '../src/components/noteList/NoteList';
+import NoteAppHeader from './components/NoteAppHeader';
+
+const App = () => {
+  const [tasks, setTasks] = useState([]); // This state holds all tasks
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="note-app-container">
+      <NoteAppHeader />
+      <AddTask setTasks={setTasks} />
+      <TaskList tasks={tasks} />
     </div>
   );
-}
+};
 
 export default App;

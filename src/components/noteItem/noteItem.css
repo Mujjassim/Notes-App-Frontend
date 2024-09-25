@@ -1,0 +1,14 @@
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+    .task-item {
+        padding: 8px;
+    }
+}
+  

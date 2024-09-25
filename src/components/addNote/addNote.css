@@ -1,0 +1,66 @@
+.add-note-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.add-note-button {
+    background-color: #92400E;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.add-note-button:hover {
+    background-color: #7b3b0e;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+    form{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .note-input {
+       width: 100% !important;
+       margin-right: 0;
+       margin-bottom: 8px;
+    }
+
+    .add-note-button {
+        font-size: 12px;
+        width: 40%;
+    }
+
+    .add-icon {
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+    }
+
+
+}
